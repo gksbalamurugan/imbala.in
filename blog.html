@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        bgDark: '#0a0a0a',
+                        accent: '#3b82f6',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: white;
+        }
+        /* Custom Selection Color */
+        ::selection {
+            background-color: #3b82f6;
+            color: white;
+        }
+    </style>
+</head>
+
+<body class="bg-bgDark text-white antialiased selection:bg-accent selection:text-white">
+
+    <nav class="fixed top-0 w-full z-50 px-6 py-6 bg-gradient-to-b from-bgDark to-transparent">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="group flex items-center gap-2 text-sm font-mono text-gray-400 hover:text-white transition-colors">
+                <span class="transform group-hover:-translate-x-1 transition-transform">←</span>
+                Back to Home
+            </a>
+            
+            <div class="font-bold text-lg tracking-tight hidden md:block">Balamurugan S.</div>
+        </div>
+    </nav>
+
+    <main class="pt-32 pb-24 px-6 w-full max-w-7xl mx-auto">
+
+        <div class="mb-20">
+            <h1 class="text-5xl md:text-7xl font-black tracking-tight mb-6">
+                Writing<span class="text-accent">.</span>
+            </h1>
+            <p class="text-xl text-gray-400 max-w-2xl leading-relaxed">
+                Thoughts on <span class="text-white">Hardware Engineering</span>, <span class="text-white">AI Systems</span>, and the chaotic process of building things that actually work.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <article class="group relative flex flex-col h-full bg-neutral-900/40 border border-white/10 rounded-2xl overflow-hidden hover:border-accent/40 transition-all duration-300">
+                <div class="p-8 flex flex-col h-full">
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="px-2 py-1 text-[10px] font-mono uppercase tracking-widest border border-white/20 rounded text-accent">Hardware</span>
+                        <span class="text-xs font-mono text-gray-600">May 12, 2025</span>
+                    </div>
+
+                    <h2 class="text-2xl font-bold text-white mb-4 group-hover:text-accent transition-colors">
+                        Optimizing Torque Distribution for Dual-Motor EVs
+                    </h2>
+                    
+                    <p class="text-gray-400 text-sm leading-relaxed mb-8 flex-grow">
+                        A deep dive into the electronic differential logic we built for the SASTRA Racing Team's 2025 vehicle. Dealing with slip ratios and traction control on a budget.
+                    </p>
+
+                    <a href="#" class="inline-flex items-center gap-2 text-sm font-mono text-white group-hover:gap-3 transition-all">
+                        Read Article <span class="text-accent">→</span>
+                    </a>
+                </div>
+            </article>
+
+            <article class="group relative flex flex-col h-full bg-neutral-900/40 border border-white/10 rounded-2xl overflow-hidden hover:border-accent/40 transition-all duration-300">
+                <div class="p-8 flex flex-col h-full">
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="px-2 py-1 text-[10px] font-mono uppercase tracking-widest border border-white/20 rounded text-green-400">AI & NLP</span>
+                        <span class="text-xs font-mono text-gray-600">Apr 08, 2025</span>
+                    </div>
+
+                    <h2 class="text-2xl font-bold text-white mb-4 group-hover:text-accent transition-colors">
+                        Automating Emergency Response
+                    </h2>
+                    
+                    <p class="text-gray-400 text-sm leading-relaxed mb-8 flex-grow">
+                        How we integrated Hugging Face transformers with the 112 emergency backend to classify distress calls in real-time.
+                    </p>
+
+                    <a href="#" class="inline-flex items-center gap-2 text-sm font-mono text-white group-hover:gap-3 transition-all">
+                        Read Article <span class="text-accent">→</span>
+                    </a>
+                </div>
+            </article>
+
+            <article class="group relative flex flex-col h-full bg-neutral-900/40 border border-white/10 rounded-2xl overflow-hidden hover:border-accent/40 transition-all duration-300">
+                <div class="p-8 flex flex-col h-full">
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="px-2 py-1 text-[10px] font-mono uppercase tracking-widest border border-white/20 rounded text-red-400">Security</span>
+                        <span class="text-xs font-mono text-gray-600">Mar 22, 2025</span>
+                    </div>
+
+                    <h2 class="text-2xl font-bold text-white mb-4 group-hover:text-accent transition-colors">
+                        Securing IoT Telemetry in Racing
+                    </h2>
+                    
+                    <p class="text-gray-400 text-sm leading-relaxed mb-8 flex-grow">
+                        Competitive environments are hostile. Here is how we secured our vehicle's data transmission against potential interference.
+                    </p>
+
+                    <a href="#" class="inline-flex items-center gap-2 text-sm font-mono text-white group-hover:gap-3 transition-all">
+                        Read Article <span class="text-accent">→</span>
+                    </a>
+                </div>
+            </article>
+
+            <article class="group relative flex flex-col h-full bg-neutral-900/40 border border-white/10 rounded-2xl overflow-hidden hover:border-accent/40 transition-all duration-300">
+                <div class="p-8 flex flex-col h-full">
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="px-2 py-1 text-[10px] font-mono uppercase tracking-widest border border-white/20 rounded text-yellow-400">Learning</span>
+                        <span class="text-xs font-mono text-gray-600">Feb 15, 2025</span>
+                    </div>
+
+                    <h2 class="text-2xl font-bold text-white mb-4 group-hover:text-accent transition-colors">
+                        Why I Learned Tailwind CSS as an Electrical Engineer
+                    </h2>
+                    
+                    <p class="text-gray-400 text-sm leading-relaxed mb-8 flex-grow">
+                        Most hardware engineers shy away from frontend code. Here is why building my own portfolio was the best investment I made this year.
+                    </p>
+
+                    <a href="#" class="inline-flex items-center gap-2 text-sm font-mono text-white group-hover:gap-3 transition-all">
+                        Read Article <span class="text-accent">→</span>
+                    </a>
+                </div>
+            </article>
+
+            <article class="group relative flex flex-col h-full bg-neutral-900/40 border border-white/10 rounded-2xl overflow-hidden hover:border-accent/40 transition-all duration-300">
+                <div class="p-8 flex flex-col h-full">
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="px-2 py-1 text-[10px] font-mono uppercase tracking-widest border border-white/20 rounded text-blue-400">Update</span>
+                        <span class="text-xs font-mono text-gray-600">Jan 10, 2025</span>
+                    </div>
+
+                    <h2 class="text-2xl font-bold text-white mb-4 group-hover:text-accent transition-colors">
+                        Reflections on EFWDC 2024
+                    </h2>
+                    
+                    <p class="text-gray-400 text-sm leading-relaxed mb-8 flex-grow">
+                        We won 3rd prize, but we failed in many areas. A transparent look at what went wrong and how we are fixing it for 2025.
+                    </p>
+
+                    <a href="#" class="inline-flex items-center gap-2 text-sm font-mono text-white group-hover:gap-3 transition-all">
+                        Read Article <span class="text-accent">→</span>
+                    </a>
+                </div>
+            </article>
+
+            <article class="flex flex-col h-full justify-center items-center border border-dashed border-white/10 rounded-2xl p-8 min-h-[300px]">
+                <p class="text-gray-600 font-mono text-sm mb-2">More writing in progress...</p>
+                <div class="h-1 w-12 bg-accent/50 rounded-full"></div>
+            </article>
+
+        </div>
+
+    </main>
+
+    <footer class="border-t border-white/5 py-12 text-center">
+        <p class="text-gray-600 text-xs font-mono">
+            © 2025 Balamurugan S.
+        </p>
+    </footer>
+
+</body>
+</html>
