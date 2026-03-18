@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Not Found | Balamurugan S.</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        bgDark: '#0a0a0a',
+                        accent: '#3b82f6',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23000000%22/><text y=%22.9em%22 font-size=%2290%22 font-weight=%22bold%22 font-family=%22Arial, sans-serif%22 x=%2250%22 text-anchor=%22middle%22 fill=%22%233b82f6%22>B</text></svg>">
+    
+    <style>
+        .glass-nav {
+            background: rgba(10, 10, 10, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+    </style>
+</head>
+
+<body class="bg-bgDark text-gray-300 antialiased selection:bg-accent selection:text-white min-h-screen flex flex-col">
+
+    <nav class="fixed top-0 w-full z-50 glass-nav px-6 py-4">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <a href="index.html" class="group flex items-center gap-2 text-sm font-mono text-gray-400 hover:text-white transition-colors">
+                <span class="transform group-hover:-translate-x-1 transition-transform">←</span>
+                Back to Safety
+            </a>
+            <span class="text-xs font-mono text-gray-600 hidden md:block">System Status: Offline</span>
+        </div>
+    </nav>
+
+    <main class="flex-grow flex flex-col items-center justify-center px-6 text-center pt-20">
+        <div class="space-y-6 max-w-lg">
+            
+            <h1 class="text-7xl md:text-9xl font-black text-white tracking-tighter">
+                404<span class="text-accent">.</span>
+            </h1>
+            
+            <div class="h-px w-16 bg-white/20 mx-auto"></div>
+            
+            <h2 class="text-2xl md:text-3xl font-bold text-white">Connection Lost.</h2>
+            
+            <p class="text-gray-400 text-base md:text-lg leading-relaxed">
+                Looks like you've wandered off the grid. The project documentation you are looking for is currently being engineered or doesn't exist yet.
+            </p>
+            
+            <div class="pt-6 flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="index.html" class="px-8 py-3 bg-white text-black font-bold rounded-lg hover:bg-gray-200 transition-transform active:scale-95 text-sm">
+                    Return Home
+                </a>
+                <a href="projects.html" class="px-8 py-3 border border-white/20 text-white font-medium rounded-lg hover:bg-white/10 transition-colors active:scale-95 text-sm">
+                    View Project Archive
+                </a>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer class="py-8 text-center text-gray-500 text-xs font-mono border-t border-white/5">
+        <p>Error Code: 404 // Balamurugan S.</p>
+    </footer>
+
+</body>
+</html>
